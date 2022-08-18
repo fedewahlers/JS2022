@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* FONTS */
+body{
+    background: #000;
+}
+
+header{   
+    background-color: gray;    
+    margin-bottom: 40px;
+    text-align: center;
+}
+.home{
+    text-decoration: none;
+    color: black;   
+    font-size: xx-large;
+    font-weight: bolder;    
+}
+.home:hover{
+    transition: 2s;
+}
+
+.IMG1{
+    margin-left: 130px;
+}
+
+
+footer{
+    background-color: gray;
+    color: white;
+    font-size: larger;
+    margin-bottom: 0%;
+    margin-top: 40px;
+
+}
