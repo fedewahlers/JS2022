@@ -2,11 +2,45 @@
 
 let Uno =  prompt ("Ingresa tu nombre")
 let mensaje  = alert ("Bienvenido/a "+ Uno)
-let Edad = prompt ("Ingresa tu edad") 
+let Edad = parseInt (prompt ("Ingresa tu edad")) 
 
-//APLICO CONDICIONAL IF Y ELSE//
+// USO DEL CICLO FOR Y USO EL CNODICIONAL IF Y ELSE IF//
 
-let numero = 18;
 
-if (Edad >= numero) { alert ("Perfecto, sos mayor de edad, ingreso exitoso ")} 
-else if (Edad <= numero){ alert ("Lo siento solo se permite el ingreso a mayores de 18")}  
+for (i = 0; i <=5; i++){
+    if (Edad >= 18){
+        alert("Bienvenido a tattoo gallery")
+        break;
+    } else if (Edad < 18) {
+        Edad = prompt("No podés ingresar sos menor de edad ingresa una edad valida")
+    }
+
+     if (i == 5) {
+        alert("Ya superaste el maximo de intentos, estás baneado de IP")
+    }
+}
+
+//USO DEL WHILE //
+
+// let intentos = 0
+
+// if (edad >= 18) {
+//     alert("Podés pasar capo")
+// }
+
+// while (edad < 18) {
+
+//     let nuevaEdad = parseInt(prompt("No podés pasar capo, ingresá nuevamente la edad"))
+//     intentos = intentos + 1
+
+//     if(nuevaEdad >= 18) {
+//         alert("Ahora podés pasar jaja")
+//         break;
+//     } else if (intentos == 5) {
+//         alert("No podés intentar más")
+//         break;
+//     }
+// }
+  
+
+
