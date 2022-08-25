@@ -41,6 +41,189 @@ for (i = 0; i <=5; i++){
 //         break;
 //     }
 // }
-  
+
+
+
+
+
+
+
+
+
+
+//EJERCICIOS DE PRACTICA DEL USO DEL WHILE E IF DENTRO//
+
+
+
+
+
+
+
+// let numero = parseInt (prompt ("Ingrese un numero"))
+
+
+
+//  while (numero > 0) {
+//     let numeronuevo = parseInt(prompt ("Ingresa de nuevo un numero"))
+//     let numerowe = numero += numeronuevo
+
+//     if (numeronuevo == 0) {
+//         alert (numerowe)
+//         break;
+        
+//     }
+    
+//  }
+
+
+
+
+
+
+
+
+// let par = parseInt(prompt("Ingrese un numero par"))
+// let rese = par % 2
+// let total = 1
+
+// while (rese == 0 ){
+
+// let repar = parseInt (prompt("Ingrese otro numero par"))
+
+// let esimpar = repar % 2
+
+// if (esimpar != 0) {
+//     alert (`Ingresaste un total de $(total) numeros pares`)
+//     break;
+
+// }
+// total ++
+
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+//EJERCICIOS CON EL USO DEL FOR//
+
+
+
+
+
+
+// let peticion = parseInt(prompt("Ingrese un numero"))
+
+
+
+// for (i=0 ; i<=peticion ; i++){
+
+    
+
+// console.log (i+",");
+
+
+    
+
+
+// }
+
+
+
+
+
+
+
+
+//EJERICIOS DEL USO DEL SWITCH//
+
+
+let opcion = prompt ("elegi una opcion  \n 1-consultar turnos \n 2-agregar al carrito \n 3-contactanos  ")
+
+switch (opcion) {
+
+case "1":
+alert ("para informaciuon sobre turnos comunicarse con el 112279593")
+break;
+
+case "2":
+
+
+alert("Gracias por su eleccion, podra elegir los diseños que usted quiera")
+break
+
+case"3":
+
+alert("nos encontramos en la galeria bond street ubicada sobre av santa fe")
+break
+;
+default:
+    alert("ingresa una opcion para poder continuar navegando, saludos! GALLERY TATTO")
+    break;
+
+}
+
+
+//FUNCIONES Y SU USO////CREE UNA FUNCION QUE DEVUELVE UNA NOTA TEORICA EN BASE A UNA NOTA NUMERICA INGRESADA POR EL USUARIO//
+
+
+
+
+function Notas (num){
+    var calif;
+
+   
+
+    switch (num){
+        case 5:
+            calif= " aprobado"
+            break;
+
+            case 6:
+                calif = " bien"
+                break;
+
+                case 7:
+
+                case 8:
+                    calif = " notable"
+                    break;
+
+                    case 9:
+                        calif = " sobresaliente"
+                        break;
+
+                        case 10:
+                            calif =" matricula "
+                         break;
+
+                         default:
+                            calif= " suspenso"
+
+
+    }
+
+return calif;
+
+
+
+
+
+}
+
+let notaFinal = parseInt(prompt("Ingrese su nota numerica y te dire el promedio"))
+
+alert ("tu calificacion es"+ Notas(notaFinal))
+
+
+
 
 
