@@ -197,33 +197,95 @@ function Notas (num){
                     calif = " notable"
                     break;
 
-                    case 9:
-                        calif = " sobresaliente"
-                        break;
-
-                        case 10:
-                            calif =" matricula "
+                     case 9:
+                         calif = " sobresaliente"
                          break;
+                         case 10:
+                             calif =" matricula "
+                          break;
 
-                         default:
-                            calif= " suspenso"
+                          default:
+                             calif= " suspenso"
 
 
+     }
+ return calif;
+
+
+
+
+
+ }
+
+ let notaFinal = parseInt(prompt("Ingrese su nota numerica y te dire el promedio"))
+
+ alert ("tu calificacion es"+ Notas(notaFinal))
+
+
+
+//OBJETOS Y METODOS//
+
+
+
+// const tatoo1 = {
+
+//     precio: 5400,
+//     tamaño: "mediano",
+//     color: "negro"
+
+
+// }
+
+
+//FUNCION CONSTRUCTORA//
+
+class Autos {
+    constructor (marca, modelo ,color, precio){
+
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.precio = parseInt(precio);
     }
-
-return calif;
-
-
-
-
-
+     cambiarColor(){
+        console.log(`Cmbiando el color del auto ${this.color}`);
+    }
 }
 
-let notaFinal = parseInt(prompt("Ingrese su nota numerica y te dire el promedio"))
-
-alert ("tu calificacion es"+ Notas(notaFinal))
 
 
+const auto1 = new Autos ("suzuki", "quingorreado", "azul", 5000);
 
+const auto2 = new Autos ("chevrolet", "corsa", "negro", 10000);
+
+    auto2.cambiarColor() ;
+
+
+
+
+
+
+//HERENCIA DE UNA CLASE//
+
+//CREO UNA CLASE NUEVA DERIBADA DE LA CLASE AUTOS, LA HEREDA, HEREDA LAS PROPIEDADES Y LOS METODOS COMO CAMBIARCOLOR//
+
+
+class AutoElectrico extends Autos{
+
+    //EL CONSTRUCTOR HEREDA EL DE AUTOS USANDO EL SUPER TAMBIEN PONIENDO LOS PARAMETROS//
+
+
+    constructor (marca, modelo, color, precio, encendido, motor){
+        super(marca, modelo, color , precio);
+
+        this.encendido = encendido;
+        this.motor = motor;
+
+    }
+}
+
+const tesla = new AutoElectrico ("tesla", "carrion", "azul", 2000, "manual", "gasolero")
+
+tesla.cambiarColor()
 
 
