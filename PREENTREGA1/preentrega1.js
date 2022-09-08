@@ -67,18 +67,19 @@ default:
 
 
 
+alert("A continuacion ingrese un diseño y le diremos si esta dsponible");
+
+const ingreso = prompt("Ingrese el diseño que esta buscando");
+
+let arregloNew = []
 
 
 
 
-const tatoo23 = {
 
-    precio: 5400,
-    tamaño: "mediano",
-    color: "negro"
-}
 
-class tattoos {
+
+class Tattoos {
     constructor (diseño, tamaño ,color, precio){
 
         this.diseño = diseño;
@@ -86,27 +87,28 @@ class tattoos {
         this.color = color;
         this.precio = parseInt(precio);
     }
-     cambiarColor(){
-        console.log(`Cmbiando el color del tattoo ${this.color}`);
-    }
+  
 }
-const tatto1 = new Tattoos ("flor", "20cm", "azul y negro", 5000);
 
+const tatto1 = new Tattoos ("flor", "20cm", "azul y negro",   50000);
 const tatto2 = new Tattoos ("tribal", "15cm", "negro y rojo", 3000);
-
-console.log( tatto2.cambiarColor() );   
-
-
-const tipos1 = ["flor", "tribal", "cruz", "palmera"];
-
-console.log(tipos1[0]);
+const tatto3 = new Tattoos ("numeros romanos", "45cm", "blanco y gris", 4500);
+const tatto4 = new Tattoos ("rostro realista", "67cm", "celeste y rojo", 22000);
+const tatto5 = new Tattoos ("brujula", "7cm", "negro y azul", 78000);
+const tatto6 = new Tattoos ("ancla", "10cm", "negro y verde", 98000);
 
 
-tipos1.push ( "mandala")
-
-console.log(tipos1);
+arregloNew.push (tatto1 , tatto2 , tatto3 , tatto4 , tatto5 , tatto6)
 
 
+
+let gondola = arregloNew.find (  tatuaje => tatuaje.diseño === ingreso)
+
+if (gondola == undefined){
+    alert("No esta disponible")
+}
+
+alert (JSON.stringify(gondola))
 
 
 
