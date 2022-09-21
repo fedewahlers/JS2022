@@ -5,6 +5,7 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* FONTS */
+
 body{
     background: #000;
 }
@@ -14,18 +15,10 @@ header{
     margin-bottom: 40px;
     text-align: center;
 }
-.home{
-    text-decoration: none;
-    color: black;   
-    font-size: xx-large;
-    font-weight: bolder;    
-}
-.home:hover{
-    transition: 2s;
-}
 
-.IMG1{
-    margin-left: 130px;
+p {
+    color: white;
+    margin-bottom: 0;
 }
 
 .ofer{
@@ -33,22 +26,49 @@ header{
     text-align: center;
     font-size: xx-large;
     font-weight: 900;
-
 }
 
 h1{ 
     background-color: beige;
     color: black;
-   text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
-
 footer{
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: larger;
     margin-bottom: 0%;
     margin-top: 40px;
+    text-align: center;
 
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: black;
+    border: solid 2px grey;
+}
+
+.btn-primary:hover {
+    background-color: grey;
+    border: solid 2px black;
 }
