@@ -52,3 +52,16 @@ function mostrarGuardados (guardado) {
     })
 
 }
+
+//BOTON PARA LIBRERIA//
+
+let botonlibre = document.getElementById("click")
+botonlibre.addEventListener("click", () => {
+    Swal.fire(
+        'Bienvenido a Tatto Gallery',
+        'Nos encontramos en galeria bond street',
+        'info'
+      )
+
+
+});
