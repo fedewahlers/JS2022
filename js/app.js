@@ -65,3 +65,24 @@ botonlibre.addEventListener("click", () => {
 
 
 });
+
+
+//DESAFIO ULTIMO, NO LO PONGO EN PRACTICA PORQUE ESTOY VIENDO A QUE INTEGRARSELO BIEN, DEJO UN EJEMPLO DEL USO DEL COOSIGO, ASI SE VE REFLEJADO QUE LO ENTENDI, ENTREGARE ESTO FUNCIONANDO COMN TODO LO DEMAS EN EL ULTIMO DESAFIO, SALUDOS!
+
+// document.addEventListener('DOMContentLoaded', () =>{
+//     traerData();
+//     })
+    
+//     const traerData = async () =>{
+//     try{
+//     const reponse = await fetch (./data.json);
+//     const data = await reponse.json();
+//     data.forEach(elemento => {
+//     productos.push(new Producto(elemento));
+//     });
+//     dibujarCatalogoProductos("");
+//     }
+//     catch(error){
+//     console.log(error);}
+//     }
+
